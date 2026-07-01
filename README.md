@@ -1,9 +1,9 @@
-📦 ScootWise Frontend
+# 📦 ScootWise Frontend
 
-Smart Electric Scooter Fleet Management Platform
-Built with React (Vite) + Tailwind CSS + Socket.IO Client
+### Smart Electric Scooter Fleet Management Platform
+### Built with React (Vite) + Tailwind CSS + Socket.IO Client
 
-🚀 Overview
+## 🚀 Overview
 
 ScootWise Frontend is the official user interface for the ScootWise SaaS platform.
 
@@ -15,21 +15,26 @@ JWT authentication
 
 It provides real-time scooter tracking, ride management, admin dashboard, and maintenance workflows.
 
-🧠 Tech Stack
+## 🧠 Tech Stack
 React (Vite)
 Tailwind CSS
 React Router DOM
 Axios
 Socket.IO Client
 Context API (state management)
-⚡ Features
-🚴 Rider Panel
+
+## ⚡ Features
+
+## 🚴 Rider Panel
+
 View available scooters
 Start / End ride
 Live ride tracking (timer + cost)
 Report scooter issues
 Ride history
-🧑‍💼 Admin Dashboard
+
+## 🧑‍💼 Admin Dashboard
+
 Scooter management (CRUD UI)
 Live scooter tracking (Socket.IO)
 Ride monitoring
@@ -39,13 +44,17 @@ System overview dashboard
 View reported issues
 Update repair status
 Mark scooter as fixed
-⚡ Real-Time Features
+
+## ⚡ Real-Time Features
+
 Live scooter location updates
 Ride started / ended events
 Scooter status updates
 Instant UI refresh via Socket.IO
-📁 Project Structure
-scootwise-frontend/
+
+## 📁 Project Structure
+```
+ scootwise-frontend/
 │
 ├── public/
 │
@@ -57,41 +66,43 @@ scootwise-frontend/
 │   ├── assets/
 │
 │   ├── components/
+│   │
 │   │   ├── layout/
 │   │   │   ├── Navbar.jsx
 │   │   │   ├── Sidebar.jsx
 │   │   │   └── DashboardLayout.jsx
-│   │   │
+│   │
 │   │   ├── ui/
 │   │   │   ├── Button.jsx
 │   │   │   ├── Card.jsx
 │   │   │   ├── Modal.jsx
 │   │   │   └── Loader.jsx
-│   │   │
+│   │
 │   │   ├── scooter/
 │   │   │   ├── ScooterCard.jsx
 │   │   │   └── ScooterMap.jsx
-│   │   │
+│   │
 │   │   └── ride/
 │   │       ├── RidePanel.jsx
 │   │       └── RideTimer.jsx
 │
 │   ├── pages/
+│   │
 │   │   ├── auth/
 │   │   │   ├── Login.jsx
 │   │   │   └── Register.jsx
-│   │   │
+│   │
 │   │   ├── rider/
 │   │   │   ├── Home.jsx
 │   │   │   ├── ActiveRide.jsx
 │   │   │   └── History.jsx
-│   │   │
+│   │
 │   │   ├── admin/
 │   │   │   ├── Dashboard.jsx
 │   │   │   ├── Scooters.jsx
 │   │   │   ├── Rides.jsx
 │   │   │   └── Maintenance.jsx
-│   │   │
+│   │
 │   │   └── maintenance/
 │   │       └── Tickets.jsx
 │
@@ -100,7 +111,9 @@ scootwise-frontend/
 │   │   └── SocketContext.jsx
 │
 │   ├── hooks/
+│
 │   ├── services/
+│
 │   ├── socket/
 │   │   └── socket.js
 │
@@ -108,6 +121,7 @@ scootwise-frontend/
 │   │   └── AppRouter.jsx
 │
 │   ├── utils/
+│
 │   ├── App.jsx
 │   └── main.jsx
 │
@@ -115,12 +129,15 @@ scootwise-frontend/
 ├── vite.config.js
 ├── tailwind.config.js
 └── package.json
-🔌 Backend Integration
+```
+
+## 🔌 Backend Integration
 API Base URL
 VITE_API_URL=http://localhost:5000/api
 Socket URL
 VITE_SOCKET_URL=http://localhost:5000
-⚡ Socket Events
+
+## ⚡ Socket Events
 
 The frontend listens to:
 
@@ -129,14 +146,17 @@ ride:ended
 scooter:locationUpdated
 scooter:statusUpdated
 scooter:batteryUpdated
-🚀 Installation & Setup
+
+## 🚀 Installation & Setup
+
 1. Install dependencies
 npm install
 2. Run development server
 npm run dev
 3. Open app
 http://localhost:5173
-🎨 UI / UX Design
+
+## 🎨 UI / UX Design
 
 The frontend uses a modern SaaS dashboard design:
 
@@ -145,7 +165,9 @@ Card-based analytics UI
 Map-based scooter tracking
 Responsive mobile-first layout
 Smooth transitions & reusable components
-🧠 Architecture
+
+## 🧠 Architecture
+```
 React UI
    ↓
 Axios (REST API)
@@ -159,23 +181,29 @@ Socket.IO
 Real-time updates
    ↓
 React Context updates UI instantly
-🔒 Security
+```
+
+## 🔒 Security
+
 JWT authentication
 Protected routes
 Token stored in localStorage
 Role-based UI rendering
-📈 Future Improvements
+
+## 📈 Future Improvements
+
 Mapbox live scooter tracking
 Dark mode UI
 Push notifications
 PWA mobile support
 Payment integration
 Animated scooter movement on map
-👨‍💻 Author
 
-Karim Chebbi
-Full Stack Developer & Instructor (GoMyCode)
+## 👨‍💻 Author
 
-🏁 Conclusion
+### Karim Chebbi
+### Full Stack Developer & Instructor (GoMyCode)
 
-ScootWise Frontend is a scalable, real-time SaaS dashboard built with React + Vite, fully integrated with a Node.js backend using REST APIs and Socket.IO for live updates.
+## 🏁 Conclusion
+
+### ScootWise Frontend is a scalable, real-time SaaS dashboard built with React + Vite, fully integrated with a Node.js backend using REST APIs and Socket.IO for live updates.
