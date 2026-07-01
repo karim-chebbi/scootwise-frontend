@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Button from "../../components/common/Button";
 import { useAuth } from "../../context/AuthContext";
+import Footer from "../public/Footer";
 
 const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -29,8 +30,8 @@ const Login = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top,_#f8fafc,_#eef2f7_55%,_#e2e8f0)] px-4 py-10">
-      <div className="w-full max-w-5xl overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-2xl">
+    <div className="flex min-h-screen items-center gap-10 flex-col justify-center bg-[radial-gradient(circle_at_top,#f8fafc,#eef2f7_55%,#e2e8f0)] px-4 py-10">
+      <div className="w-full max-w-5xl overflow-hidden rounded-4xl border border-slate-200 bg-white shadow-2xl">
         <div className="grid lg:grid-cols-[1.1fr_0.9fr]">
           <div className="bg-slate-950 p-10 text-white">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-3xl shadow-lg">
@@ -94,6 +95,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

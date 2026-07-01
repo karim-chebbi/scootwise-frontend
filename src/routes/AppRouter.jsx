@@ -4,6 +4,8 @@ import Navbar from "../components/layout/Navbar";
 import Sidebar from "../components/layout/Sidebar";
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
+import About from "../pages/public/About";
+import Contact from "../pages/public/Contact";
 import Home from "../pages/rider/Home";
 import Ride from "../pages/rider/Ride";
 import History from "../pages/rider/History";
@@ -47,6 +49,9 @@ const AppRouter = () => {
 
   return (
     <Routes>
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+
       <Route
         path="/login"
         element={
